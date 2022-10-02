@@ -113,8 +113,12 @@ html, body, .stage {
 }
 @media (max-width: 1000px){
   .container{
-      perspective: 3000px;
-      width: 310px;
-      height: 700px;
+      perspective: 0px;
+      max-width: 310px;
+      max-height: 700px;
     }
+        .header {
+          position: static;
+    
+        }
   }
