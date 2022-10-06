@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="ru" >
 <head>
   <meta charset="UTF-8">
   <title>CodePen - Parallax Photo Carousel</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
 <div class="header">
 <!-- partial:index.partial.html -->
-<span class="header-inner">
+<div class="header-inner">
   <a href="#" class="logo">
     <img src="images/logo.png" alt="Логотип">
   </a>
@@ -18,48 +22,38 @@
   <ul class="menu__list">
     <li class="menu__list-item">
       <a class="menu__list-link" href="#about">
-        Contacts
+        ЦЕНА
       </a>
     </li>
     <li class="menu__list-item">
       <a class="menu__list-link" href="#service">
-        Logo
+        УПАКОВКА
       </a>
     </li>
     <li class="menu__list-item">
       <a class="menu__list-link" href="#pricing">
-        Branding
+        ЛОГО
       </a>
     </li>
   </ul>
 </nav>
-</span>
-
-<div class="stage">
-  
-  
-<div class="container">
-  <div class="ring">
-    <a href="#" class="img"></a>
-    <a href="#" class="img"></a>
-    <a href="#" class="img"></a>
-    <a href="#" class="img"></a>
-    <a href="#" class="img"></a>
-    <a href="#" class="img"></a>
-    <a href="#" class="img"></a>
-    <a href="#" class="img"></a>
-    <a href="#" class="img"></a>
-    <a href="#" class="img"></a>
-    <a href="#" class="img"></a>
-    
-  </div>
 </div>
 
+<section class="slider_images-header">
+<div class="slider_img" style="background-image: url(images/32.jpg)"></div>
+<div class="slider_img" style="background-image: url(images/33.jpg)"></div>
+<div class="slider_img" style="background-image: url(images/34.jpg)"></div>
+<div class="slider_img" style="background-image: url(images/35.jpg)"></div>
+<div class="slider_img" style="background-image: url(images/36.jpg)"></div>
+<div class="slider_img" style="background-image: url(images/37.jpg)"></div>
+<div class="slider_img" style="background-image: url(images/38.jpg)"></div>
+</section>
+
 </div>
-</div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js'></script><script  src="./script.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
