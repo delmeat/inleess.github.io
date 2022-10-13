@@ -1,53 +1,193 @@
 <!DOCTYPE html>
-<html lang="ru" >
+<html lang="en" >
 <head>
   <meta charset="UTF-8">
   <title>CodePen - Parallax Photo Carousel</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Montserrat:ital,wght@0,700;1,700&display=swap"
+  rel="stylesheet">
 <link rel="stylesheet" href="css/slick.css">
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
+  <div class="container_background">
 <div class="header">
 <!-- partial:index.partial.html -->
 <div class="header-inner">
-  <a href="#" class="logo">
-    <img src="images/logo.png" alt="Логотип">
-  </a>
 <nav class="menu">
-  <ul class="menu__list">
-    <li class="menu__list-item">
-      <a class="menu__list-link" href="#about">
-        ЦЕНА
+  <ul>
+    <li>
+      <a id="menu_logo" class="menu_logo" href="#logotype">
+        LOGO
       </a>
     </li>
-    <li class="menu__list-item">
-      <a class="menu__list-link" href="#service">
-        УПАКОВКА
+    <li>
+      <a id="menu_branding" class="menu_branding" href="#branding">
+        BRANDING
       </a>
     </li>
-    <li class="menu__list-item">
-      <a class="menu__list-link" href="#pricing">
-        ЛОГО
+    <li>
+      <a id="menu_price" class="menu_branding" href="#pricing">
+        PRICE
       </a>
     </li>
   </ul>
 </nav>
 </div>
+</div>
 
-<section class="slider_images-header">
-<div class="slider_img" style="background-image: url(images/32.jpg)"></div>
-<div class="slider_img" style="background-image: url(images/33.jpg)"></div>
-<div class="slider_img" style="background-image: url(images/34.jpg)"></div>
-<div class="slider_img" style="background-image: url(images/35.jpg)"></div>
-<div class="slider_img" style="background-image: url(images/36.jpg)"></div>
-<div class="slider_img" style="background-image: url(images/37.jpg)"></div>
-<div class="slider_img" style="background-image: url(images/38.jpg)"></div>
+<section class="logotype" id="logotype">
+  <h2 class="logotype__title title">LOGO</h2>
+  <div class="container">
+    <div class="logotype__items">
+      <div class="logotype__item">
+        <a href="#" class="logotype__item-link">
+          <img src="images/seafood.png" alt="" class="logotype__item-img">
+        </a>
+      </div>
+      <div class="logotype__item">
+        <a href="#" class="logotype__item-link">
+          <img src="images/logo.png" alt="" class="logotype__item-img">
+        </a>
+      </div>
+      <div class="logotype__item">
+        <a href="#" class="logotype__item-link">
+          <img src="images/raspberry.png" alt="" class="logotype__item-img">
+        </a>
+      </div>
+      <div class="logotype__item">
+        <a href="#" class="logotype__item-link">
+          <img src="images/petstore.png" alt="" class="logotype__item-img">
+        </a>
+      </div>
+      <div class="logotype__item">
+        <a href="#" class="logotype__item-link">
+          <img src="images/heart.png" alt="" class="logotype__item-img">
+        </a>
+      </div>
+      <div class="logotype__item">
+        <a href="#" class="logotype__item-link">
+          <img src="images/brainstorm.png" alt="" class="logotype__item-img">
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
+
+<section class="branding" id="branding">
+  <h2 class="branding__title title">BRANDING</h2>
+  <div class="container">
+  <div class="branding__items">
+    <div class="branding__item">
+        <a href="#" class="brandin__item-link">
+          <img class="branding__item-img" src="images/33.jpg" alt="">
+          <div class="branding__hover"></div>
+        </a>
+    </div>
+    <div class="branding__item">
+        <a href="#" class="brandin__item-link">
+          <img class="branding__item-img" src="images/34.jpg" alt="">
+          <div class="branding__hover"></div>
+        </a>
+    </div>
+    <div class="branding__item">
+        <a href="#" class="brandin__item-link">
+          <img class="branding__item-img" src="images/35.jpg" alt="">
+          <div class="branding__hover"></div>
+        </a>
+    </div>
+    <div class="branding__item">
+        <a href="#" class="brandin__item-link">
+          <img class="branding__item-img" src="images/36.jpg" alt="">
+          <div class="branding__hover"></div>
+        </a>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <h2 class="pricing__title title">PRICE</h2>
+  <div class="container">
+  <div class="pricing__items">
+        <div class="pricing__item">
+          <div class="pricing__item-icon icon1">ЛОГО</div>
+          <div class="pricing__item-text text1">
+            <p>Разработка логотипа</p>
+            <p>Создание графики</p>
+            <p>Внесение правок</p>
+            <p>Подбор цветов</p>
+            <p>Подбор шрифтов</p>
+          </div>
+          <div class="pricing__item-subtext subtext1">
+            <p>2-3 варианта</p>
+            <p>при необходимости</p>
+            <p>2 этапа правок</p>
+            <p>cmyk/rgb</p>
+            <p>для доп. текста</p>
+          </div>
+          <div class="pricing__btn">
+            <a href="#" class="pricing__btn-link btn-link1">
+              ЗАКАЗАТЬ
+            </a>
+          </div>
+        </div>
+    <div class="pricing__item">
+      <div class="pricing__item-icon icon2">ОТДЕЛЬНО</div>
+      <div class="pricing__item-text text2">
+          <p>Дизайн логотипа</p>
+          <p>Дизайн визитки</p>
+          <p>Дизайн прайса</p>
+          <p>Дизайн сертификата</p>
+          <p>Дизайн приглашения</p>
+      </div>
+      <div class="pricing__item-subtext subtext2">
+          <p>10.000-20.000 ₸</p>
+          <p>3500-5000 ₸</p>
+          <p>3000 ₸</p>
+          <p>4000 ₸</p>
+          <p>3000-6000 ₸</p>
+      </div>
+                <div class="pricing__btn">
+                  <a href="#" class="pricing__btn-link">
+                    ЗАКАЗАТЬ
+                  </a>
+                </div>
+    </div>
+        <div class="pricing__item">
+          <div class="pricing__item-icon icon3">БРЕНДИНГ</div>
+          <div class="pricing__item-text text3">
+              <p>Разработка логотипа</p>
+              <p>Создание графики</p>
+              <p>Внесение правок</p>
+              <p>Подбор цветов</p>
+              <p>Подбор шрифтов</p>
+              <p>Визитка</p>
+              <p>Форматы для web</p>
+          </div>
+          <div class="pricing__item-subtext subtext3">
+              <p>2-3 варианта</p>
+              <p>при необходимости</p>
+              <p>2 этапа правок</p>
+              <p>cmyk/rgb</p>
+              <p>для доп. текста</p>
+              <p>2-3 варианта</p>
+              <p>jpeg/png</p>
+          </div>
+                    <div class="pricing__btn">
+                      <a href="#" class="pricing__btn-link btn-link3">
+                        ЗАКАЗАТЬ
+                      </a>
+                    </div>
+        </div>
+  </div>
+  </div>
+</section>
+
+
 
 </div>
 

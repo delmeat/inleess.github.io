@@ -21,7 +21,7 @@ h4,
 h5,
 h6,
 p,
-ul,
+ul [class],
 ol[class],
 li,
 figure,
@@ -32,7 +32,7 @@ dd {
   margin: 0;
 }
 
-ul[class] {
+ul {
   list-style: none;
 }
 
