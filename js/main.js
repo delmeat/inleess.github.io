@@ -54,7 +54,7 @@ allItems.forEach(item => {
 });
 
 
-$('.menu__button, .menu a').on('click', function () {
-  $('.header__top-inner').toggleClass('header__top-inner--active');
-  $('.menu__button').toggleClass('menu__btn--active');
-});
+// $('.menu__button, .menu a').on('click', function () {
+//   $('.header__top-inner').toggleClass('header__top-inner--active');
+//   $('.menu__button').toggleClass('menu__btn--active');
+// });

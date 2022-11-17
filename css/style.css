@@ -31,7 +31,7 @@
   }
 
   .container_background{
-    background-color: #80a8ff;
+    background-color: black;
     /* -webkit-animation: color 60s ease-in-out infinite;
     -moz-animation: color 60s ease-in-out infinite;
     -o-animation: color 60s ease-in-out infinite;
@@ -46,9 +46,39 @@
 
 
 .header {
-  background-image: url('../images/bg.png');
-    background-size: cover;
-    height: 100vh;
+  /* background-image: url('../images/bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: -200px -100px; */
+  height: 100vh;
+}
+
+.header__icon{
+  width: 800px;
+  height: 800px;
+}
+
+.header__text{
+  font-family: 'Gemunu Libre', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  left: 35%;
+  bottom: 82%;
+  font-size: 28px;
+  color: white;
+}
+
+.header__text::before{
+  content: '';
+  position: absolute;
+  background-image: url('../images/bg-arrow1.svg');
+  background-size: cover;
+  width: 250px;
+  height: 155px;
+  top: 15%;
+  right: 100%;
 }
 
 .header-inner{
@@ -68,6 +98,7 @@
 .header-inner{
   position: absolute;
   right: 0;
+  top: 0;
 }
 
 .header-inner.shadow{
@@ -102,7 +133,6 @@
   letter-spacing: 0.6px;
   text-decoration: none;
   color: white;
-  transition: all .3s;
   text-transform: uppercase;
   padding: 0 15px 0 15px;
 }
@@ -125,7 +155,7 @@
   border-radius: 50%;
   border: 3px solid #ee2b7f;
   z-index: 1;
-  transition: all .5s;
+  transition: all .8s;
 }
 
 .menu ul li a.active{
@@ -133,7 +163,7 @@
   color: white;
   font-style: inherit;
   box-shadow: none;
-  transition: all .5s;
+  transition: all .8s;
   border-bottom: 1px solid #ee2b7f;
 }
 
@@ -142,7 +172,7 @@
   width: 40px;
   height: 40px;
   left: 200px;
-  transition: 1s;
+  transition: .8s;
 
 }
 
@@ -186,7 +216,7 @@
 
 .logotype__item-img:hover{
   box-shadow: 0px 0px 40px 5px #ee2b7f;
-  border: 2px solid rgb(4, 4, 116);
+  border: none;
     width: 330px;
     height: 330px;
 }
@@ -392,6 +422,7 @@
   padding: 15px 70px;
   transition: all .3s;
 }
+
 
 .pricing__btn-link:hover{
   color: white;
